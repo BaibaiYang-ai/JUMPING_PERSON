@@ -19,7 +19,7 @@ RESET = '\033[0m'  # Reset color to default
 # im1 = Image.open("https://youtu.be/GJyD4fnR6HQ?si=KwFvCHPceoAdW5Pd")
 current_dir = os.getcwd()
 
-
+####filter by YOLO
 
 video_folder = "videos"
 video_path = os.path.join(current_dir, video_folder)
@@ -53,11 +53,6 @@ for i_video in sorted_video_files:
         print(f"File '{saved_folder}' already exists.")
 
 
-
-
-
-
-
     for i_result in range(length_results):
         i_xywh = results[i_result].boxes.xywh
         i_conf = results[i_result].boxes.conf # Boxes object for bounding box outputs
@@ -84,7 +79,7 @@ for i_video in sorted_video_files:
 
 
 
-
+### generate videos by images
 
 
 # Define the folder containing your images
